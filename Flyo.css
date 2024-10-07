@@ -1,0 +1,194 @@
+
+/*### Primary
+
+- Very Dark Blue: hsl(243, 87%, 12%)
+- Desaturated Blue: hsl(238, 22%, 44%)
+
+### Accent
+
+- Bright Blue: hsl(224, 93%, 58%)
+- Moderate Cyan: hsl(170, 45%, 43%)
+
+### Neutral
+
+- Light Grayish Blue: hsl(240, 75%, 98%)
+- Light Gray: hsl(0, 0%, 75%)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --dark-blue:hsl(243, 87%, 12%);
+   --Desaturated-Blue: hsl(238, 22%, 44%);
+   --bright-blue:hsl(224, 93%, 58%);
+   --cyan: hsl(170, 45%, 43%);
+   --Light-Grayish-Blue: hsl(240, 75%, 98%);
+   --Light-Gray: hsl(0, 0%, 75%);
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1 ,h2,h3,h4{
+    font-family: cursive;
+}
+.container{
+    margin: 0 7rem;
+    
+}
+/*header start*/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+}
+ ul{
+        list-style: none;
+       
+}
+ a{
+    text-decoration: none;
+
+}
+#navbar  ul {
+    display: flex;
+    
+}
+#navbar  ul li a{
+    margin:0 30px ;
+    color: var(--dark-blue);
+    font-family: cursive;
+
+}
+#home .row ,#team .row ,#sign-in .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:8rem 0 ;
+    column-gap: 5rem; 
+    
+}
+#home .row img ,#team .row img{
+    max-width: 100%;
+}
+#home .row .col h1{
+    font-size: 30px;
+    line-height: 1.4;
+
+}
+#home .row .col p{
+    margin: 30px 0;
+}
+#home .row .col input{
+    padding: 10px 15px;
+    width: 300px;
+    margin-right: 15px;
+
+   
+    
+}
+#home .row .col .btn{
+    padding: 10px 15px;
+    background-color: var(--bright-blue);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    width:150px ;
+
+}
+
+
+
+
+
+/*header end*/
+/*Team start*/
+#team{
+    background: url(./images/bg-curve-desktop.svg) no-repeat center center/cover;
+}
+#team .row h2{
+    font-size:  35px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+#team .row .col > p {
+    color:var(--Desaturated-Blue) ;
+    margin: 20px 0;
+    padding-right: 5rem;
+}
+#team .row .col a{
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+}
+#team .row .col .box
+{
+    background-color: white;
+    margin-top: 3rem;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+#team .row .col .box p{
+    font-size: 12px;
+    margin: 15px 0;
+    line-height: 1.7;
+}
+#team .row .col .box .avatar{
+    display: flex;
+    align-items: center;
+
+}
+#team .row .col .box .avatar img{
+    width: 60px;
+    margin-right:  15px;
+    border-radius: 50%;
+}
+#team .row .col .box .avatar h3{
+    font-size: 12px;
+    font-weight: 700;
+}
+#team .row .col .box .avatar p{
+    font-size: 10px ;
+}
+
+
+
+/*Team :end*/
+/*sign start*/
+    #sign-in .row{
+        padding: 6rem 0;
+    }
+    #sign-in {
+        background-color: var(--Desaturated-Blue);
+    }
+    #sign-in .row .col-1 h2{
+        font-size: 32px;
+        color: var(--Light-Grayish-Blue);
+        margin-bottom: 25px;
+    }
+    #sign-in .row .col-1 p{
+        color: var(--Light-Gray);
+        margin-right: 7rem;
+    }
+    #sign-in .row .col-2 input{
+        display: block;
+        padding: 20px;
+        width: 90%;
+        margin-bottom: 20px
+        ;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+    #sign-in .row .col-2 .btn{
+        padding: 15px 20px;
+        background-color: var(--bright-blue);
+        border: none;
+        color: #fff;
+        width: 300px;
+    }
+
+/*sign end*/
+
